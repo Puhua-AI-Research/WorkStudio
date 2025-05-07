@@ -1,0 +1,97 @@
+@use './container.scss';
+
+#inputbar {
+  resize: none;
+}
+
+.ant-image-preview-switch-left {
+  -webkit-app-region: no-drag;
+}
+
+.ant-btn:not(:disabled):focus-visible {
+  outline: none;
+}
+
+.ant-tabs-tabpane:focus-visible {
+  outline: none;
+}
+
+.ant-segmented-group {
+  gap: 4px;
+}
+
+.minapp-drawer {
+  max-width: calc(100vw - var(--sidebar-width));
+  .ant-drawer-content-wrapper {
+    box-shadow: none;
+  }
+  .ant-drawer-header {
+    position: absolute;
+    -webkit-app-region: drag;
+    min-height: calc(var(--navbar-height) + 0.5px);
+    width: calc(100vw - var(--sidebar-width));
+    margin-top: -0.5px;
+    border-bottom: none;
+  }
+  .ant-drawer-body {
+    padding: 0;
+    margin-top: var(--navbar-height);
+    overflow: hidden;
+    @extend #content-container;
+  }
+  .minapp-mask {
+    background-color: transparent !important;
+  }
+}
+
+.ant-drawer-header {
+  -webkit-app-region: no-drag;
+}
+
+.message-attachments {
+  .ant-upload-list-item:hover {
+    background-color: initial !important;
+  }
+}
+.ant-switch.ant-switch-checked {
+  background: #4879ec !important;
+}
+
+.ant-btn-variant-solid {
+  background-color: #4879ec !important;
+}
+.ant-slider-track {
+  background-color: #4879ec !important;
+  &:hover {
+    background-color: #4879ec !important;
+  }
+}
+.ant-slider:hover .ant-slider-track {
+  background-color: #4879ec !important;
+}
+.ant-slider-handle::after {
+  box-shadow: 0 0 0 2px #4879ec !important;
+}
+.ant-slider .ant-slider-dot-active {
+  border-color: #4879ec !important;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #fff !important;
+  border-color: #4879ec !important;
+  background: #4879ec !important;
+}
+.ant-input-outlined:focus,
+.ant-input-outlined:focus-within,
+.ant-input-outlined:hover,
+.ant-input-number-outlined:focus-within,
+.ant-input-number-outlined:focus,
+.ant-input-number-outlined:hover {
+  border-color: #4879ec !important;
+}
+.ant-btn-variant-solid:disabled,
+.ant-btn-variant-solid.ant-btn-disabled {
+  color: #eee;
+}
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+  border-color: #4879ec;
+}

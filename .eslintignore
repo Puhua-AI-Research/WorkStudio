@@ -1,0 +1,5 @@
+node_modules
+dist
+out
+.gitignore
+scripts/cloudflare-worker.js
