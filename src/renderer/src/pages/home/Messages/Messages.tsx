@@ -37,6 +37,7 @@ interface Props {
   setActiveTopic: (topic: Topic) => void
 }
 import { useTheme } from '@renderer/context/ThemeProvider'
+import { useTranslation } from 'react-i18next'
   
 
 const Messages: FC<Props> = ({ assistant, topic, setActiveTopic }) => {
@@ -44,6 +45,7 @@ const Messages: FC<Props> = ({ assistant, topic, setActiveTopic }) => {
   const [displayMessages, setDisplayMessages] = useState<Message[]>([])
   const [hasMore, setHasMore] = useState(true)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
+  const { t } = useTranslation()
 
   const { theme } = useTheme()
 
@@ -324,7 +326,13 @@ const Messages: FC<Props> = ({ assistant, topic, setActiveTopic }) => {
               <BeatLoader size={8} color="var(--color-text-2)" />
             </LoaderContainer>
             {
-            Object.entries(groupedMessages).length===0?(<EmptyMsg><div><img src={theme==='light'?LogoLightPng:LogoBlackPng}></img></div><div>WorkStudio是一款集成多功能的智能办公助手，通过AI技术为用户提供全方位的办公支持，提升工作效率和创造力</div></EmptyMsg>):Object.entries(groupedMessages).map(([key, messages]) => (
+            Object.entries(groupedMessages).length===0?(
+            <EmptyMsg>
+              <div>
+                <img src={theme==='light'?LogoLightPng:LogoBlackPng}></img>
+              </div>
+              <div>{t('docs.product.description')}</div>
+              </EmptyMsg>):Object.entries(groupedMessages).map(([key, messages]) => (
               <MessageGroup
                 key={key}
                 messages={messages}
@@ -338,7 +346,7 @@ const Messages: FC<Props> = ({ assistant, topic, setActiveTopic }) => {
             ))}
           </ScrollContainer>
         </InfiniteScroll>
-        <Prompt assistant={assistant} key={assistant.prompt} topic={topic} />
+        {/* <Prompt assistant={assistant} key={assistant.prompt} topic={topic} /> */}
       </NarrowLayout>
     </Container>
   )

@@ -77,12 +77,12 @@ const SettingsPage: FC = () => {
               {t('settings.shortcuts.title')}
             </MenuItem>
           </MenuItemLink>
-          <MenuItemLink to="/settings/quickAssistant">
+          {/* <MenuItemLink to="/settings/quickAssistant">
             <MenuItem className={isRoute('/settings/quickAssistant')}>
               <RocketOutlined />
               {t('settings.quickAssistant.title')}
             </MenuItem>
-          </MenuItemLink>
+          </MenuItemLink> */}
           <MenuItemLink to="/settings/data">
             <MenuItem className={isRoute('/settings/data')}>
               <SaveOutlined />

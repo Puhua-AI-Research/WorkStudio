@@ -92,7 +92,7 @@ const Container = styled(Scrollbar)`
   flex-direction: column;
   padding-top: 11px;
   user-select: none;
-  padding-top: 30px;
+  padding-top: 10px;
 `
 
 const AssistantAddItem = styled.div`

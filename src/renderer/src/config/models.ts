@@ -165,7 +165,7 @@ export const VISION_REGEX = new RegExp(
   'i'
 )
 
-export const TEXT_TO_IMAGE_REGEX = /flux|diffusion|stabilityai|sd-|dall|cogview|janus/i
+export const TEXT_TO_IMAGE_REGEX = /flux|diffusion|stabilityai|sd-|dall|cogview|kolors|image|janus/i
 export const REASONING_REGEX =
   /^(o\d+(?:-[\w-]+)?|.*\b(?:reasoner|thinking)\b.*|.*-[rR]\d+.*|.*\bqwq(?:-[\w-]+)?\b.*)$/i
 
@@ -463,12 +463,12 @@ export const SYSTEM_MODELS: Record<string, Model[]> = {
   ],
   ollama: [],
   lmstudio: [
-    {
-      id: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
-      name: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
-      provider: 'lmstudio',
-      group: 'deepseek-ai'
-    }
+    // {
+    //   id: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
+    //   name: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
+    //   provider: 'lmstudio',
+    //   group: 'deepseek-ai'
+    // }
     // {
     //   id: 'deepseek-ai/DeepSeek-R1',
     //   name: 'deepseek-ai/DeepSeek-R1',

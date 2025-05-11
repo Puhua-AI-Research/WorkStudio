@@ -85,14 +85,42 @@ const PaintingsPage: FC = () => {
 
   const { providers } = useProviders()
   const allModels = providers.map((p) => p.models).flat()
-  const modelOptions = allModels.filter(v=>v.type?.includes('vision')).map((model) => ({
+
+  const modelOptions = allModels.filter(v=>v.type?.includes('image')).map((model) => ({
     label: model.name,
     value: model.id,
     ...model
   }))
 
+  // console.log('modelOptions', modelOptions)
+
   const textareaRef = useRef<any>(null)
   _painting = painting
+  
+  // Use ref to track initialization state
+  const initializedRef = useRef(false)
+
+  // Set default model if not set
+  useEffect(() => {
+    if (!initializedRef.current) {
+      initializedRef.current = true;
+      
+      if (modelOptions.length > 0 && !painting.model) {
+        const defaultModel = modelOptions[0].value;
+        setPainting(prev => ({ ...prev, model: defaultModel }));
+        // Update in store but don't trigger re-render cycle
+        setTimeout(() => {
+          updatePainting({ ...painting, model: defaultModel });
+        }, 0);
+      } else if (modelOptions.length === 0 && painting.model) {
+        setPainting(prev => ({ ...prev, model: undefined }));
+        // Update in store but don't trigger re-render cycle
+        setTimeout(() => {
+          updatePainting({ ...painting, model: undefined });
+        }, 0);
+      }
+    }
+  }, [modelOptions]);
 
   const updatePaintingState = (updates: Partial<Painting>) => {
     const updatedPainting = { ...painting, ...updates }

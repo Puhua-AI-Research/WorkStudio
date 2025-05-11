@@ -36,7 +36,7 @@ const SelectModelButton: FC<Props> = ({ assistant }) => {
       <ButtonContent>
         <ModelAvatar model={model} size={20} />
         <ModelName>
-          {model ? model.name : t('button.select_model')} {'| PH8-LLM'}
+          {model ? model.name : t('button.select_model')}
         </ModelName>
         <ModelTags model={model} showFree={false} showReasoning={false} />
       </ButtonContent>

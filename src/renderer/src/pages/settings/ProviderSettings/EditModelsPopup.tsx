@@ -5,6 +5,7 @@ import {
   getModelLogo,
   isEmbeddingModel,
   isReasoningModel,
+  isTextToImageModel,
   isVisionModel,
   isWebSearchModel,
   SYSTEM_MODELS
@@ -38,6 +39,7 @@ const isModelInProvider = (provider: Provider, modelId: string): boolean => {
 const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
   const [open, setOpen] = useState(true)
   const { provider, models, addModel, removeModel } = useProvider(_provider.id)
+  console.log('models', models)
   const [listModels, setListModels] = useState<Model[]>([])
   const [loading, setLoading] = useState(false)
   const [searchText, setSearchText] = useState('')
@@ -70,6 +72,19 @@ const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
         return true
     }
   })
+
+  const getModelType = (model: any) => {
+    if (isTextToImageModel(model)) {
+      return "image"
+    } else if (isVisionModel(model)) {
+      return "vision"
+    } else if (isReasoningModel(model)) {
+      return "reasoning"
+    } else if (isEmbeddingModel(model)) {
+      return "embedding"
+    }
+    return model.type
+  }
 
   const modelGroups = groupBy(list, 'group')
 
@@ -111,7 +126,9 @@ const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
               group: getDefaultGroupName(model.id),
               // @ts-ignore name
               description: model?.description,
-              owned_by: model?.owned_by
+              owned_by: model?.owned_by,
+              type: [getModelType(model)] as Model["type"]
+
             }))
             .filter((model) => !isEmpty(model.name))
         )

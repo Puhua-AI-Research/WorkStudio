@@ -12,6 +12,7 @@ import styled from 'styled-components'
 import Inputbar from './Inputbar/Inputbar'
 import Messages from './Messages/Messages'
 import Tabs from './Tabs'
+import { useTranslation } from 'react-i18next'
 
 interface Props {
   assistant: Assistant
@@ -24,6 +25,7 @@ const Chat: FC<Props> = (props) => {
   const { assistant } = useAssistant(props.assistant.id)
   const { topicPosition, messageStyle } = useSettings()
   const { showTopics } = useShowTopics()
+  const { t } = useTranslation()
   return (
     <Container id="chat" className={messageStyle}>
       <Main id="chat-main" vertical flex={1} justify="space-between">
@@ -41,16 +43,16 @@ const Chat: FC<Props> = (props) => {
             <Icon>
               <PlusOutlined />
             </Icon>
-            切换智能体
+            {t('chat.assistant.switch.title')}
           </TopBtn>
           <TopBtn
             onClick={() => {
               AssistantSettingsPopup.show({ assistant })
             }}>
             <Icon>
-              <i className="iconfont icon-setting" />
+              <i className="iconfont icon-ai-model" />
             </Icon>
-            助手设置
+            {t('chat.assistant.settings.title')}
           </TopBtn>
           <TopBtn
             onClick={() =>
@@ -59,14 +61,13 @@ const Chat: FC<Props> = (props) => {
                 activeTopic: props.activeTopic,
                 setActiveAssistant: props.setActiveAssistant,
                 setActiveTopic: props.setActiveTopic,
-
                 activeName: 'settings'
               })
             }>
             <Icon>
-              <i className="iconfont icon-setting" />
+              <i className="iconfont icon-icon-adaptive-width" />
             </Icon>
-            参数调整
+            {t('chat.assistant.params.title')}
           </TopBtn>
         </TopButtons>
 

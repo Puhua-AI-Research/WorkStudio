@@ -108,6 +108,7 @@ const AssistantItem: FC<AssistantItemProps> = ({ assistant, isActive, onSwitch, 
 
     onSwitch(assistant)
   }, [clickAssistantToShowTopic, onSwitch, assistant, topicPosition])
+  console.log(assistant)
 
   const assistantName = assistant.name || t('chat.default.name')
   const fullAssistantName = assistant.emoji ? `${assistant.emoji} ${assistantName}` : assistantName
@@ -122,7 +123,7 @@ const AssistantItem: FC<AssistantItemProps> = ({ assistant, isActive, onSwitch, 
             {/* {showAssistantIcon  ? assistantName : fullAssistantName} */}
           </AssistantName>
         </AssistantNameRow>
-        {isActive && (
+        {isActive && false && (
           <MenuButton onClick={() => EventEmitter.emit(EVENT_NAMES.SWITCH_TOPIC_SIDEBAR)}>
             <TopicCount className="topics-count">{assistant.topics.length}</TopicCount>
           </MenuButton>
@@ -136,29 +137,45 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7px 10px;
+  padding: 8px 12px;
   position: relative;
-  margin: 0 10px;
+  margin: 4px 10px;
   font-family: Ubuntu;
   border-radius: var(--list-item-border-radius);
   border: 0.5px solid transparent;
-  width: calc(var(--assistants-width) - 20px);
+  max-width: calc(100vw - 50px);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  
   .iconfont {
     opacity: 0;
     color: var(--color-text-3);
+    transition: opacity 0.2s ease;
   }
+  
   &:hover {
     background-color: var(--color-background-soft);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
     .name {
       color: #fff;
     }
+    
+    .iconfont {
+      opacity: 1;
+    }
   }
+  
   &.active {
     background-color: var(--color-background-soft);
     border: 0.5px solid var(--color-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    
     .name {
       color: #fff;
+      font-weight: 500;
     }
   }
 `

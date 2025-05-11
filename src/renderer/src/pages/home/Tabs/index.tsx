@@ -44,7 +44,7 @@ const HomeTabs: FC<Props> = ({
   const [activeNameCopy, setActiveNameCopy] = useState('')
   const { t } = useTranslation()
 
-  const borderStyle = '0.5px solid var(--color-border)'
+  const borderStyle = '0.0px solid var(--color-border)'
   const border =
     position === 'left' ? { borderRight: borderStyle } : { borderLeft: borderStyle, borderTopLeftRadius: 0 }
 
@@ -104,11 +104,11 @@ const HomeTabs: FC<Props> = ({
     setActiveNameCopy(activeName ?? '')
   }, [activeName])
   return (
-    <Container style={border} className="home-tabs">
+    <Container style={{width: "800px"}} className="home-tabs">
       {showTab && false && (
         <Segmented
           value={tab}
-          style={{ borderRadius: 16, paddingTop: 10, margin: '0 10px', gap: 2 }}
+          style={{ borderRadius: 16, paddingTop: 10, margin: '0 40px', gap: 2 }}
           options={
             [
               position === 'left' && topicPosition === 'left' ? assistantTab : undefined,
@@ -149,9 +149,8 @@ const HomeTabs: FC<Props> = ({
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: var(--assistants-width);
-  min-width: var(--assistants-width);
-  max-height: 600px;
+  max-width: 100%;
+  min-width: 100%;
   background-color: var(--color-background);
   overflow: hidden;
   .collapsed {
@@ -166,6 +165,7 @@ const TabContent = styled.div`
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
 `
 const Segmented = styled(AntSegmented)`
   &.ant-segmented {

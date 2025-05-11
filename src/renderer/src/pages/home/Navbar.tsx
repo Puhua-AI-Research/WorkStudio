@@ -101,19 +101,21 @@ const HeaderNavbar: FC<Props> = ({ activeAssistant }) => {
               </Tooltip>
             </>
           )}
-          <TitleText
+          {/* <TitleText
             style={{ marginRight: 10, cursor: 'pointer' }}
-            className="nodrag"
+            className=""
             onClick={() => AssistantSettingsPopup.show({ assistant })}>
             {assistant.name}
-          </TitleText>
+          </TitleText> */}
           <SelectModelButton assistant={assistant} />
+          <span style={{ marginLeft: '8px', marginRight: '8px' }}>{assistant.name == "默认助手" ? "" : assistant.name}</span>
         </HStack>
         <HStack alignItems="center" gap={8}>
           <UpdateAppButton />
           <Tooltip title={t('chat.assistant.search.placeholder')} mouseEnterDelay={0.8}>
             <NarrowIcon onClick={onOpenDocs}>
-              <ProfileOutlined /> <span style={{ marginLeft: '8px' }}>帮助文档</span>
+              <ProfileOutlined /> 
+              <span style={{ marginLeft: '8px' }}>{t('docs.title')}</span>
             </NarrowIcon>
           </Tooltip>
           <Tooltip title={t('chat.assistant.search.placeholder')} mouseEnterDelay={0.8}>

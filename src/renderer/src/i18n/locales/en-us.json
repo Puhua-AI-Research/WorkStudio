@@ -67,11 +67,15 @@
       "added": "Added",
       "collapse": "Collapse",
       "manage": "Manage",
+      "reset_model": "Reset Model",
       "select_model": "Select Model",
       "show.all": "Show All",
       "update_available": "Update Available"
     },
     "chat": {
+      "assistant.switch.title": "Switch Assistant",
+      "assistant.settings.title": "Assistant Settings",
+      "assistant.params.title": "Adjust Parameters",
       "add.assistant.title": "Add Assistant",
       "artifacts.button.download": "Download",
       "artifacts.button.openExternal": "Open in external browser",
@@ -199,7 +203,8 @@
       "you": "You"
     },
     "docs": {
-      "title": "Docs"
+      "title": "Docs",
+      "product.description": "WorkStudio is a multi-functional intelligent office assistant integrated with AI technology, providing comprehensive office support for users to enhance work efficiency and creativity"
     },
     "error": {
       "backup.file_format": "Backup file format error",

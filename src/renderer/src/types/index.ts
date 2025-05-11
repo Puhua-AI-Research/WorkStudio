@@ -118,7 +118,7 @@ export type Provider = {
 
 export type ProviderType = 'openai' | 'anthropic' | 'gemini' | 'qwenlm' | 'azure-openai'
 
-export type ModelType = 'text' | 'vision' | 'embedding' | 'reasoning'
+export type ModelType = 'text' | 'vision' | 'embedding' | 'reasoning' | 'image'
 
 export type Model = {
   id: string

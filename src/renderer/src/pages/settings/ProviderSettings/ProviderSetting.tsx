@@ -1,5 +1,6 @@
 import {
   CheckOutlined,
+  ClearOutlined,
   EditOutlined,
   ExportOutlined,
   LoadingOutlined,
@@ -52,6 +53,9 @@ interface Props {
   provider: Provider
 }
 
+const toPH8LLM:boolean = true
+// const toPH8LLM:boolean = false
+
 const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
   const { provider } = useProvider(_provider.id)
   const [apiKey, setApiKey] = useState(provider.apiKey)
@@ -67,12 +71,14 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
 
   const { defaultModel, setDefaultModel } = useDefaultModel()
 
+  console.log("models", models)
+
   const modelGroups = groupBy(models, 'group')
   const sortedModelGroups = sortBy(toPairs(modelGroups), [0]).reduce((acc, [key, value]) => {
     acc[key] = value
     return acc
   }, {})
-
+  console.log('sortedModelGroups', sortedModelGroups)
   const isAzureOpenAI = provider.id === 'azure-openai' || provider.type === 'azure-openai'
 
   const providerConfig = PROVIDER_CONFIG[provider.id]
@@ -101,6 +107,26 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
   const onUpdateApiVersion = () => updateProvider({ ...provider, apiVersion })
   const onManageModel = () => EditModelsPopup.show({ provider })
   const onAddModel = () => AddModelPopup.show({ title: t('settings.models.add.add_model'), provider })
+
+
+  async function onResetModel() {
+    window.modal.confirm({
+      title: i18n.t('common.warning'),
+      content: i18n.t('message.reset.confirm.content'),
+      centered: true,
+      onOk: async () => {
+        window.modal.confirm({
+          title: i18n.t('message.reset.double.confirm.title'),
+          content: i18n.t('message.reset.double.confirm.content'),
+          centered: true,
+          onOk: async () => {
+            await localStorage.clear()
+            window.api.reload()
+          }
+        })
+      }
+    })
+  }
 
   const onCheckApi = async () => {
     if (isEmpty(models)) {
@@ -226,20 +252,64 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
             {/* {provider.isSystem ? t(`provider.${provider.id}`) : provider.name} */}
             PH8-LLM
           </ProviderName>
-          {officialWebsite! && (
+          {/* {officialWebsite! && (
             <Link target="_blank" href={providerConfig.websites.official}>
               <ExportOutlined style={{ color: 'var(--color-text)', fontSize: '12px' }} />
             </Link>
-          )}
+          )} */}
         </Flex>
-        <Switch
+        {/* <Switch
           value={provider.enabled}
           key={provider.id}
           onChange={(enabled) => updateProvider({ ...provider, apiKey, apiHost, enabled })}
-        />
+        /> */}
       </SettingTitle>
       <Divider style={{ width: '100%', margin: '10px 0' }} />
-      <SettingSubtitle style={{ marginTop: 5 }}>{t('settings.provider.api_key')}</SettingSubtitle>
+      {!toPH8LLM && (
+        <>
+          <SettingSubtitle>{t('settings.provider.api_host')}</SettingSubtitle>
+          <Space.Compact style={{ width: '100%', marginTop: 5 }}>
+            <Input
+              value={apiHost}
+              placeholder={t('settings.provider.api_host')}
+              onChange={(e) => setApiHost(e.target.value)}
+              onBlur={onUpdateApiHost}
+            />
+            {!isEmpty(configedApiHost) && apiHost !== configedApiHost && (
+              <Button danger onClick={onReset}>
+                {t('settings.provider.api.url.reset')}
+              </Button>
+            )}
+          </Space.Compact>
+          {isOpenAIProvider(provider) && (
+            <SettingHelpTextRow style={{ justifyContent: 'space-between' }}>
+              <SettingHelpText style={{ marginLeft: 6 }}>{hostPreview()}</SettingHelpText>
+              <SettingHelpText>{t('settings.provider.api.url.tip')}</SettingHelpText>
+            </SettingHelpTextRow>
+          )}
+          {isAzureOpenAI && (
+            <>
+              <SettingSubtitle>{t('settings.provider.api_version')}</SettingSubtitle>
+              <Space.Compact style={{ width: '100%', marginTop: 5 }}>
+                <Input
+                  value={apiVersion}
+                  placeholder="2024-xx-xx-preview"
+                  onChange={(e) => setApiVersion(e.target.value)}
+                  onBlur={onUpdateApiVersion}
+                />
+              </Space.Compact>
+            </>
+          )} 
+       </>
+      )}
+      {/* 密钥 */}
+      <SettingSubtitle style={{ marginTop: 5 }}>{t('settings.provider.api_key')} 
+        {officialWebsite! && (
+              <Link target="_blank" href={providerConfig.websites.official} style={{ marginLeft: 5 }}>
+                <ExportOutlined style={{ color: 'var(--color-text)', fontSize: '12px' }} />
+              </Link>
+            )}
+      </SettingSubtitle>
       <Space.Compact style={{ width: '100%', marginTop: 5 }}>
         <Input.Password
           value={apiKey}
@@ -273,39 +343,6 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
           </HStack>
           <SettingHelpText>{t('settings.provider.api_key.tip')}</SettingHelpText>
         </SettingHelpTextRow>
-      )}
-      <SettingSubtitle>{t('settings.provider.api_host')}</SettingSubtitle>
-      <Space.Compact style={{ width: '100%', marginTop: 5 }}>
-        <Input
-          value={apiHost}
-          placeholder={t('settings.provider.api_host')}
-          onChange={(e) => setApiHost(e.target.value)}
-          onBlur={onUpdateApiHost}
-        />
-        {!isEmpty(configedApiHost) && apiHost !== configedApiHost && (
-          <Button danger onClick={onReset}>
-            {t('settings.provider.api.url.reset')}
-          </Button>
-        )}
-      </Space.Compact>
-      {isOpenAIProvider(provider) && (
-        <SettingHelpTextRow style={{ justifyContent: 'space-between' }}>
-          <SettingHelpText style={{ marginLeft: 6 }}>{hostPreview()}</SettingHelpText>
-          <SettingHelpText>{t('settings.provider.api.url.tip')}</SettingHelpText>
-        </SettingHelpTextRow>
-      )}
-      {isAzureOpenAI && (
-        <>
-          <SettingSubtitle>{t('settings.provider.api_version')}</SettingSubtitle>
-          <Space.Compact style={{ width: '100%', marginTop: 5 }}>
-            <Input
-              value={apiVersion}
-              placeholder="2024-xx-xx-preview"
-              onChange={(e) => setApiVersion(e.target.value)}
-              onBlur={onUpdateApiVersion}
-            />
-          </Space.Compact>
-        </>
       )}
       {provider.id === 'ollama' && <OllamSettings />}
       {provider.id === 'lmstudio' && <LMStudioSettings />}
@@ -358,6 +395,10 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
         <Button type="default" onClick={onAddModel} icon={<PlusOutlined />}>
           {t('button.add')}
         </Button>
+        <Button danger onClick={onResetModel} icon={<ClearOutlined />}>
+          {t('button.reset_model')}
+        </Button>
+
       </Flex>
       {models.map((model) => (
         <ModelEditContent

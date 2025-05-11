@@ -67,11 +67,15 @@
       "added": "Добавлено",
       "collapse": "Свернуть",
       "manage": "Редактировать",
+      "reset_model": "Сбросить модель",
       "select_model": "Выбрать модель",
       "show.all": "Показать все",
       "update_available": "Доступно обновление"
     },
     "chat": {
+      "assistant.switch.title": "Сменить ассистента",
+      "assistant.settings.title": "Настройки ассистента",
+      "assistant.params.title": "Настройка параметров",
       "add.assistant.title": "Добавить ассистента",
       "artifacts.button.download": "Скачать",
       "artifacts.button.openExternal": "Открыть во внешнем браузере",
@@ -199,7 +203,8 @@
       "you": "Вы"
     },
     "docs": {
-      "title": "Документация"
+      "title": "Документация",
+      "product.description": "WorkStudio — это многофункциональный ассистент для офиса, интегрированный с AI-технологиями, который помогает повысить эффективность работы и создательность"
     },
     "error": {
       "backup.file_format": "Ошибка формата файла резервной копии",

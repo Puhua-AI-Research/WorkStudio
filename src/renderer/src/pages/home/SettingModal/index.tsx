@@ -55,20 +55,27 @@ const SettingModalPopupContainer: React.FC<Props> = ({
       onClose={onCancel}
       onCancel={onCancel}
       afterClose={afterClose}
+      closeIcon={null}
       footer={null}
       title={''}
       transitionName="ant-move-down"
       styles={{
         content: {
-          padding: 0,
-          overflow: 'hidden',
+          padding: "10px 10px",
+          maxHeight: "calc(100vh - 200px)",
+          width: "100%",
+          // maxWidth: "800px",
+          margin: "0 auto",
+          overflow: 'auto',
+          overflowX: 'visible',
           background: 'var(--color-background)',
           border: `1px solid var(--color-frame-border)`
         },
-        header: { padding: '10px 15px', borderBottom: '0.5px solid var(--color-border)', margin: 0 }
+        // header: { padding: '10px 15px', borderBottom: '0.5px solid var(--color-border)', margin: 0 }
       }}
-      width="270px"
-      height="600px"
+      // width="300px"
+      // style={{maxWidth: "275px"}}
+      // height="600px"
       centered>
       <HStack>
         <HomeTabs

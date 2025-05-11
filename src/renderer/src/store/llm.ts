@@ -428,6 +428,7 @@ const settingsSlice = createSlice({
       )
     },
     removeModel: (state, action: PayloadAction<{ providerId: string; model: Model }>) => {
+      console.log('removeModel', action.payload);
       state.providers = state.providers.map((p) =>
         p.id === action.payload.providerId
           ? {

@@ -68,10 +68,14 @@
       "collapse": "折りたたむ",
       "manage": "管理",
       "select_model": "モデルを選択",
+      "reset_model": "モデルをリセット",
       "show.all": "すべて表示",
       "update_available": "更新可能"
     },
     "chat": {
+      "assistant.switch.title": "アシスタントを切り替える",
+      "assistant.settings.title": "アシスタント設定",
+      "assistant.params.title": "パラメーターを調整",
       "add.assistant.title": "アシスタントを追加",
       "artifacts.button.download": "ダウンロード",
       "artifacts.button.openExternal": "外部ブラウザで開く",
@@ -199,7 +203,8 @@
       "you": "あなた"
     },
     "docs": {
-      "title": "ドキュメント"
+      "title": "ドキュメント",
+      "product.description": "WorkStudioはAI技術を活用した多機能なオフィスアシスタントです。ユーザーの仕事効率と創造力を向上させることを目的としています"
     },
     "error": {
       "backup.file_format": "バックアップファイルの形式エラー",

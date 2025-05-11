@@ -67,11 +67,15 @@
       "added": "已新增",
       "collapse": "收起",
       "manage": "管理",
+      "reset_model": "重置模型",
       "select_model": "選擇模型",
       "show.all": "顯示全部",
       "update_available": "有可用更新"
     },
     "chat": {
+      "assistant.switch.title": "切換智慧體",
+      "assistant.settings.title": "助手設定",
+      "assistant.params.title": "參數調整",
       "add.assistant.title": "新增助手",
       "artifacts.button.download": "下載",
       "artifacts.button.openExternal": "外部瀏覽器開啟",
@@ -199,7 +203,8 @@
       "you": "您"
     },
     "docs": {
-      "title": "幫助文件"
+      "title": "幫助文件",
+      "product.description": "WorkStudio 是一款整合多功能的智慧辦公助手，透過 AI 技術為使用者提供全方位的辦公支援，提升工作效率和創造力"
     },
     "error": {
       "backup.file_format": "備份檔案格式錯誤",

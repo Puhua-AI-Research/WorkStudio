@@ -15,12 +15,12 @@ const SettingsPage: FC = () => {
     apiKey: '',
     apiHost: 'https://auto-openai.cpolar.cn',
     models: [
-      {
-        id: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
-        name: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
-        provider: 'lmstudio',
-        group: 'deepseek-ai'
-      }
+      // {
+      //   id: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
+      //   name: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
+      //   provider: 'lmstudio',
+      //   group: 'deepseek-ai'
+      // }
       // {
       //   id: 'deepseek-ai/DeepSeek-V3',
       //   name: 'deepseek-ai/DeepSeek-V3',

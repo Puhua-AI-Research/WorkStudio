@@ -78,6 +78,7 @@ const AssistantSettingPopupContainer: React.FC<Props> = ({ resolve, tab, ...prop
       onClose={onCancel}
       onCancel={onCancel}
       afterClose={afterClose}
+      closeIcon={null}
       footer={null}
       title={assistant.name}
       transitionName="ant-move-down"
