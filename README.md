@@ -45,9 +45,8 @@
 
 
 ### 1. Diverse LLM Service Support
-- ☁️ Support for mainstream LLM cloud services: OpenAI, Gemini, Anthropic, and more
-- 🔗 Integration with popular AI web services: Claude, Perplexity, Poe, and others
-- 💻 Support for local model deployment via Ollama and LM Studio
+- 💻 Support for local model deployment via auto_openai llm and ph8-llm
+- 🔒 Private deployment options for enterprise security and data compliance
 
 ### 2. Intelligent Assistants & Conversations
 - 📚 300+ pre-configured AI assistants built-in
@@ -115,6 +114,26 @@ yarn build:linux
    ```bash
    yarn dev
    ```
+
+### Large Model Support
+
+WorkStudio offers flexible options for large language model integration:
+
+1. **Cloud Services**: Seamlessly connect with OpenAI, Anthropic, Gemini, and other cloud-based LLM providers
+   
+2. **Local Deployment**: Run models locally with minimal setup using:
+   - Ollama for containerized deployment
+   - LM Studio for user-friendly GUI-based management
+   
+3. **ph8-llm Integration**: Native support for ph8-llm, enabling:
+   - High-performance inference
+   - Custom model fine-tuning
+   - Parameter-efficient adaptation
+
+4. **Enterprise Private Deployment**: Deploy models within your organization's infrastructure for:
+   - Data privacy compliance
+   - Custom model hosting
+   - Integration with existing enterprise systems
 
 ## 🚀 Private Deployment
 
