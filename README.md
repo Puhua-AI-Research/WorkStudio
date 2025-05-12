@@ -27,6 +27,9 @@
 <div align="center">
   <h4>💬 Intelligent Multi-model Chat</h4>
   <img src="docs/media/chat.gif" width="80%" alt="WorkStudio Chat Interface" />
+
+  <h4>⚙️ Advanced Model Settings</h4>
+  <img src="docs/media/model-settings.gif" width="80%" alt="WorkStudio Model Settings" />
   
   <h4>📚 Knowledge Processing and Management</h4>
   <img src="docs/media/knowledge.gif" width="80%" alt="WorkStudio Knowledge Processing" />
