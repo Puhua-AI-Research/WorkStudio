@@ -151,25 +151,6 @@ To deploy WorkStudio in your own environment:
 
 2. Distribute the generated installation packages from the `dist` directory
 
-## 🤝 Contributing
-
-We welcome contributions to WorkStudio! You can contribute in the following ways:
-
-1. **Code Contributions**: Develop new features or optimize existing code
-2. **Bug Fixes**: Submit fixes for bugs you've found
-3. **Issue Management**: Help manage GitHub issues
-4. **Product Design**: Participate in design discussions
-5. **Documentation**: Improve user manuals and guides
-6. **Community Engagement**: Join discussions and help users
-7. **Promotion**: Help spread the word about WorkStudio
-
-### Getting Started
-
-1. **Fork the Repository**: Fork and clone to your local machine
-2. **Create a Branch**: Create a branch for your changes
-3. **Submit Changes**: Commit and push your changes
-4. **Open a Pull Request**: Describe your changes and why they're needed
-
 
 ## 📄 License
 
