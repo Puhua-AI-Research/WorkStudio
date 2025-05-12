@@ -118,19 +118,17 @@ yarn build:linux
 ### Large Model Support
 
 WorkStudio offers flexible options for large language model integration:
-
-1. **Cloud Services**: Seamlessly connect with OpenAI, Anthropic, Gemini, and other cloud-based LLM providers
    
-2. **Local Deployment**: Run models locally with minimal setup using:
+- **Local Deployment**: Run models locally with minimal setup using:
    - Ollama for containerized deployment
    - LM Studio for user-friendly GUI-based management
    
-3. **ph8-llm Integration**: Native support for ph8-llm, enabling:
+- **ph8-llm Integration**: Native support for ph8-llm, enabling:
    - High-performance inference
    - Custom model fine-tuning
    - Parameter-efficient adaptation
 
-4. **Enterprise Private Deployment**: Deploy models within your organization's infrastructure for:
+- **Enterprise Private Deployment**: Deploy models within your organization's infrastructure for:
    - Data privacy compliance
    - Custom model hosting
    - Integration with existing enterprise systems
@@ -187,7 +185,7 @@ This project is licensed under the [Apache License 2.0](https://github.com/Puhua
 ## 💬 Technical Discussion Group
 
 <div align="center">
-  <img src="docs/static/img/group.png" alt="Technical Discussion Group QR Code" width="200"/>
+  <img src="docs/media/group.png" alt="Technical Discussion Group QR Code" width="200"/>
   <p>Scan the QR code to join our technical discussion group</p>
 </div>
 
