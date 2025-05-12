@@ -1,5 +1,3 @@
-
-<h1 align="center">WorkStudio</h1>
 <h1 align="center">
 
   <a href="https://github.com/Puhua-AI-Research/WorkStudio/releases">

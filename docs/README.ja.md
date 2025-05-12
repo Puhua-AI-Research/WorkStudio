@@ -1,4 +1,3 @@
-<h1 align="center">WorkStudio</h1>
 <h1 align="center">
   <a href="https://github.com/Puhua-AI-Research/WorkStudio/releases">
     <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />

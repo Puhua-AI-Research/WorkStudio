@@ -1,5 +1,3 @@
-<h1 align="center">WorkStudio</h1>
-
 <div align="center">
   <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />
   <h3>A powerful AI assistant for producers</h3>
