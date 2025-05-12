@@ -25,14 +25,21 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/28585d83-4bf0-4714-b561-8c7bf57cc600" width="80%" alt="WorkStudio Interface" />
-  <img src="https://github.com/user-attachments/assets/8576863a-f632-4776-bc12-657eeced9da3" width="80%" alt="WorkStudio Multi-model Chat" />
-  <img src="https://github.com/user-attachments/assets/790790d7-b462-48dd-bde1-91c1697a4648" width="80%" alt="WorkStudio Document Processing" />
+  <h4>💬 Intelligent Multi-model Chat</h4>
+  <img src="docs/media/chat.gif" width="80%" alt="WorkStudio Chat Interface" />
+  
+  <h4>📚 Knowledge Processing and Management</h4>
+  <img src="docs/media/knowledge.gif" width="80%" alt="WorkStudio Knowledge Processing" />
+  
+  <h4>🎨 AI Image Generation</h4>
+  <img src="docs/media/image-gen.gif" width="80%" alt="WorkStudio Image Generation" />
+  
+  <h4>🔤 Smart Translation</h4>
+  <img src="docs/media/translate.gif" width="80%" alt="WorkStudio Translation" />
 </div>
 
 ## 🌟 Key Features
 
-![WorkStudio Features](https://github.com/user-attachments/assets/995910f3-177a-4d1e-97ea-04e3b009ba36)
 
 ### 1. Diverse LLM Service Support
 - ☁️ Support for mainstream LLM cloud services: OpenAI, Gemini, Anthropic, and more
