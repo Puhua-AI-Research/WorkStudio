@@ -1,1 +1,1 @@
-# Cherry Studio Artifacts
+# Work Studio Artifacts
