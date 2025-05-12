@@ -94,9 +94,6 @@ yarn build:linux
 
 ## 💻 Development
 
-### IDE Setup
-[Cursor](https://www.cursor.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
 ### Project Setup
 
 1. Clone the repository
