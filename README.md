@@ -3,13 +3,25 @@
 <div align="center">
   <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />
   <h3>A powerful AI assistant for producers</h3>
+
+  <div>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/stargazers">
+      <img src="https://img.shields.io/github/stars/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub stars"/>
+    </a>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/network/members">
+      <img src="https://img.shields.io/github/forks/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub forks"/>
+    </a>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/issues">
+      <img src="https://img.shields.io/github/issues/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub issues"/>
+    </a>
+    <a href="https://opensource.org/licenses/Apache-2.0">
+      <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License"/>
+    </a>
+  </div>
   
-  [![GitHub stars](https://img.shields.io/github/stars/Puhua-AI-Research/WorkStudio.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Puhua-AI-Research/WorkStudio/stargazers/)
-  [![GitHub forks](https://img.shields.io/github/forks/Puhua-AI-Research/WorkStudio.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/Puhua-AI-Research/WorkStudio/network/)
-  [![GitHub issues](https://img.shields.io/github/issues/Puhua-AI-Research/WorkStudio.svg)](https://github.com/Puhua-AI-Research/WorkStudio/issues/)
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 </div>
 
+  
 ## 📸 Screenshots
 
 <div align="center">
