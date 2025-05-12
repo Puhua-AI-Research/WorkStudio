@@ -1,9 +1,11 @@
-# WorkStudio
+<h1 align="center">WorkStudio</h1>
 
 <div align="center">
   <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />
   <h3>A powerful AI assistant for producers</h3>
-
+    <div align="center">
+  English | <a href="docs/README.zh.md">中文</a> | <a href="../README.ja.md">日本語</a>
+</div>
   <div>
     <a href="https://github.com/Puhua-AI-Research/WorkStudio/stargazers">
       <img src="https://img.shields.io/github/stars/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub stars"/>

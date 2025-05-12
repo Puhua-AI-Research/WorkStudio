@@ -1,163 +1,182 @@
+<h1 align="center">WorkStudio</h1>
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/cherry-studio/releases">
-    <img src="https://github.com/kangfenmao/cherry-studio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
+  <a href="https://github.com/Puhua-AI-Research/WorkStudio/releases">
+    <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />
   </a>
 </h1>
 <div align="center">
-  <a href="./README.md">English</a> | <a href="./README.zh.md">中文</a> | 日本語
+  <a href="../README.md">English</a> | <a href="./README.zh.md">中文</a> | 日本語
 </div>
+
 <div align="center">
- <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fcherry-studio | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+  <h3>生産性向上のためのAIアシスタント</h3>
+
+  <div>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/stargazers">
+      <img src="https://img.shields.io/github/stars/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub stars"/>
+    </a>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/network/members">
+      <img src="https://img.shields.io/github/forks/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub forks"/>
+    </a>
+    <a href="https://github.com/Puhua-AI-Research/WorkStudio/issues">
+      <img src="https://img.shields.io/github/issues/Puhua-AI-Research/WorkStudio?style=for-the-badge" alt="GitHub issues"/>
+    </a>
+    <a href="https://opensource.org/licenses/Apache-2.0">
+      <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License"/>
+    </a>
+  </div>
+  
 </div>
-# 🍒 Cherry Studio
 
-Cherry Studioは、複数のLLMプロバイダーをサポートするデスクトップクライアントで、Windows、Mac、Linuxで利用可能です。
+## 📸 スクリーンショット
 
-👏 [Telegram](https://t.me/CherryStudioAI)｜[Discord](https://discord.gg/wez8HtpxqQ) | [QQグループ(1025067911)](https://qm.qq.com/q/RIBAO2pPKS)
+<div align="center">
+  <h4>💬 インテリジェントなマルチモデルチャット</h4>
+  <img src="media/chat.gif" width="80%" alt="WorkStudio Chat Interface" />
 
-❤️ Cherry Studioをお気に入りにしましたか？小さな星をつけてください 🌟 または [スポンサー](sponsor.md) をして開発をサポートしてください！❤️
+  <h4>⚙️ 高度なモデル設定</h4>
+  <img src="media/model-settings.gif" width="80%" alt="WorkStudio Model Settings" />
+  
+  <h4>📚 知識処理と管理</h4>
+  <img src="media/knowledge.gif" width="80%" alt="WorkStudio Knowledge Processing" />
+  
+  <h4>🎨 AI画像生成</h4>
+  <img src="media/image-gen.gif" width="80%" alt="WorkStudio Image Generation" />
+  
+  <h4>🔤 スマート翻訳</h4>
+  <img src="media/translate.gif" width="80%" alt="WorkStudio Translation" />
+</div>
 
-# 🌠 スクリーンショット
+## 🌟 主な機能
 
-![](https://github.com/user-attachments/assets/28585d83-4bf0-4714-b561-8c7bf57cc600)
-![](https://github.com/user-attachments/assets/8576863a-f632-4776-bc12-657eeced9da3)
-![](https://github.com/user-attachments/assets/790790d7-b462-48dd-bde1-91c1697a4648)
+### 1. 多様なLLMサービスのサポート
+- 💻 auto_openai llmとph8-llmによるローカルモデル展開のサポート
+- 🔒 企業のセキュリティとデータコンプライアンスのためのプライベート展開オプション
 
-# 🌟 主な機能
+### 2. インテリジェントなアシスタントと会話
+- 📚 300以上の事前設定されたAIアシスタントを内蔵
+- 🤖 カスタムパーソナライズドアシスタントの作成をサポート
+- 💬 多様な視点を得るためのマルチモデル同時会話
 
-![](https://github.com/user-attachments/assets/7b4f2f78-5cbe-4be8-9aec-f98d8405a505)
+### 3. ドキュメントとデータの処理
+- 📄 テキスト、画像、Officeドキュメント、PDFなどのサポート
+- ☁️ WebDAVファイル管理とデータバックアップ
+- 📊 Mermaid図表の視覚化
+- 💻 コードハイライト
 
-1. **多様な LLM サービス対応**：
+### 4. 実用的なツール統合
+- 🔍 グローバル検索機能
+- 📝 トピック管理システム
+- 🔤 AI駆動の翻訳
+- 🎯 ドラッグアンドドロップによる並べ替え
+- 🔌 ミニアプリのサポート
 
-   - ☁️ 主要な LLM クラウドサービス対応：OpenAI、Gemini、Anthropic など
-   - 🔗 AI Web サービス統合：Claude、Peplexity、Poe など
-   - 💻 Ollama、LM Studio によるローカルモデル実行対応
+### 5. 高品質なユーザーエクスペリエンス
+- 🖥️ Windows、Mac、Linuxのクロスプラットフォームサポート
+- 📦 環境設定不要ですぐに使用可能
+- 🎨 ライト/ダークテーマと透明ウィンドウのサポート
+- 📝 完全なMarkdownレンダリング
+- 🤲 便利なコンテンツ共有機能
 
-2. **AI アシスタントと対話**：
-
-   - 📚 300+ の事前設定済み AI アシスタント
-   - 🤖 カスタム AI アシスタントの作成
-   - 💬 複数モデルでの同時対話機能
-
-3. **文書とデータ処理**：
-
-   - 📄 テキスト、画像、Office、PDF など多様な形式対応
-   - ☁️ WebDAV によるファイル管理とバックアップ
-   - 📊 Mermaid による図表作成
-   - 💻 コードハイライト機能
-
-4. **実用的なツール統合**：
-
-   - 🔍 グローバル検索機能
-   - 📝 トピック管理システム
-   - 🔤 AI による翻訳機能
-   - 🎯 ドラッグ＆ドロップによる整理
-   - 🔌 ミニプログラム対応
-
-5. **優れたユーザー体験**：
-   - 🖥️ Windows、Mac、Linux のクロスプラットフォーム対応
-   - 📦 環境構築不要ですぐに使用可能
-   - 🎨 ライト/ダークテーマと透明ウィンドウ対応
-   - 📝 完全な Markdown レンダリング
-   - 🤲 簡単な共有機能
-
-# 📝 TODO
-
-- [x] クイックポップアップ（クリップボードの読み取り、簡単な質問、説明、翻訳、要約）
-- [x] 複数モデルの回答の比較
-- [x] サービスプロバイダーが提供するSSOを使用したログインをサポート
-- [x] すべてのモデルがネットワークをサポート
-- [x] 最初の公式バージョンのリリース
-- [ ] 錯誤修復と改善 (開発中...)
-- [ ] プラグイン機能（JavaScript）
-- [ ] ブラウザ拡張機能（テキストをハイライトして翻訳、要約、ナレッジベースに追加）
-- [ ] iOS & Android クライアント
-- [ ] AIノート
-- [ ] 音声入出力（AIコール）
-- [ ] データバックアップはカスタムバックアップコンテンツをサポート
-
-# 🖥️ 開発
-
-## IDEの設定
-
-[Cursor](https://www.cursor.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## プロジェクトの設定
-
-### インストール
+## 📋 インストール
 
 ```bash
-$ yarn
+# Yarnを使用してインストール
+yarn
+
+# 開発モード
+yarn dev
+
+# Windows用ビルド
+yarn build:win
+
+# macOS用ビルド
+yarn build:mac
+
+# Linux用ビルド
+yarn build:linux
 ```
 
-### 開発
+## 💻 開発
 
-```bash
-$ yarn dev
-```
+### プロジェクトセットアップ
 
-### ビルド
+1. リポジトリをクローン
+   ```bash
+   git clone https://github.com/Puhua-AI-Research/WorkStudio.git
+   cd WorkStudio
+   ```
 
-```bash
-# Windowsの場合
-$ yarn build:win
+2. 依存関係をインストール
+   ```bash
+   yarn
+   ```
 
-# macOSの場合
-$ yarn build:mac
+3. 開発サーバーを起動
+   ```bash
+   yarn dev
+   ```
 
-# Linuxの場合
-$ yarn build:linux
-```
+### 大規模モデルサポート
 
-# 🤝 貢献
+WorkStudioは大規模言語モデル統合のための柔軟なオプションを提供します：
+   
+- **ローカル展開**: 最小限の設定で以下を使用してモデルをローカルで実行：
+   - コンテナ化展開のためのOllama
+   - ユーザーフレンドリーなGUIベース管理のためのLM Studio
+   
+- **ph8-llm統合**: ph8-llmをネイティブにサポートし、以下を実現：
+   - 高性能推論
+   - カスタムモデル微調整
+   - パラメータ効率の良い適応
 
-Cherry Studioへの貢献を歓迎します！以下の方法で貢献できます：
+- **企業プライベート展開**: 組織のインフラストラクチャ内でモデルを展開し、以下を実現：
+   - データプライバシーコンプライアンス
+   - カスタムモデルホスティング
+   - 既存の企業システムとの統合
 
-1. **コードの貢献**：新機能を開発するか、既存のコードを最適化します。
-2. **バグの修正**：見つけたバグを修正します。
-3. **問題の管理**：GitHubの問題を管理するのを手伝います。
-4. **製品デザイン**：デザインの議論に参加します。
-5. **ドキュメントの作成**：ユーザーマニュアルやガイドを改善します。
-6. **コミュニティの参加**：ディスカッションに参加し、ユーザーを支援します。
-7. **使用の促進**：Cherry Studioを広めます。
+## 🚀 プライベート展開
 
-## 始め方
+独自の環境でWorkStudioを展開するには：
 
-1. **リポジトリをフォーク**：フォークしてローカルマシンにクローンします。
-2. **ブランチを作成**：変更のためのブランチを作成します。
-3. **変更を提出**：変更をコミットしてプッシュします。
-4. **プルリクエストを開く**：変更内容と理由を説明します。
+1. ターゲットプラットフォーム用にアプリケーションをビルド
+   ```bash
+   # Windows
+   yarn build:win
 
-詳細なガイドラインについては、[貢献ガイド](./CONTRIBUTING.md)をご覧ください。
+   # macOS
+   yarn build:mac
 
-ご支援と貢献に感謝します！
+   # Linux
+   yarn build:linux
+   ```
 
-## 関連頁版
+2. `dist`ディレクトリから生成されたインストールパッケージを配布
 
-- [one-api](https://github.com/songquanpeng/one-api):LLM APIの管理・配信システム。OpenAI、Azure、Anthropicなどの主要モデルに対応し、統一APIインターフェースを提供。APIキー管理と再配布に利用可能。
 
-# 🚀 コントリビューター
+## 📄 ライセンス
 
-<a href="https://github.com/kangfenmao/cherry-studio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kangfenmao/cherry-studio" />
-</a>
+このプロジェクトは[Apache License 2.0](https://github.com/Puhua-AI-Research/WorkStudio/blob/main/LICENSE)の下で追加条項付きでライセンスされています：
 
-# コミュニティ
+- **無料商用利用**: ユーザーはコードを変更せずに商業目的でソフトウェアを使用できます
+- **商用ライセンスが必要な場合**:
+  - アプリケーション（名前、ロゴ、コード、機能）を変更する場合
+  - 10人以上のユーザーを持つ企業顧客にマルチテナントサービスを提供する場合
+  - ハードウェアデバイスや製品に事前インストールまたはバンドルする場合
+  - 政府または教育機関による大規模調達の場合
 
-[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/kangfenmao)
+## 💬 技術ディスカッショングループ
 
-# 📣 プロダクトハント
+<div align="center">
+  <img src="media/group.png" alt="技術ディスカッショングループQRコード" width="200"/>
+  <p>QRコードをスキャンして技術ディスカッショングループに参加してください</p>
+</div>
 
-<a href="https://www.producthunt.com/posts/cherry-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+## ⭐ スター履歴
 
-# スポンサー
+[![Star History Chart](https://api.star-history.com/svg?repos=Puhua-AI-Research/WorkStudio&type=Timeline)](https://star-history.com/#Puhua-AI-Research/WorkStudio&Timeline)
 
-[Buy Me a Coffee](sponsor.md)
-
-# 📃 ライセンス
-
-[LICENSE](../LICENSE)
-
-# ⭐️ スター履歴
-
-[![Star History Chart](https://api.star-history.com/svg?repos=kangfenmao/cherry-studio&type=Timeline)](https://star-history.com/#kangfenmao/cherry-studio&Timeline)
+<div align="center">
+  <p><a href="https://github.com/Puhua-AI-Research">Puhua AIリサーチ</a>が❤️を込めて作成</p>
+  <p>© 2025 WorkStudio. All rights reserved.</p>
+</div>
