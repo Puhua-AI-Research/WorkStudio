@@ -131,7 +131,6 @@ We welcome contributions to WorkStudio! You can contribute in the following ways
 3. **Submit Changes**: Commit and push your changes
 4. **Open a Pull Request**: Describe your changes and why they're needed
 
-For more detailed guidance, see our [Contribution Guidelines](https://github.com/Puhua-AI-Research/WorkStudio/blob/main/CONTRIBUTING.md).
 
 ## 📄 License
 
@@ -144,16 +143,21 @@ This project is licensed under the [Apache License 2.0](https://github.com/Puhua
   - When pre-installing or bundling with hardware devices or products
   - For large-scale procurement by government or educational institutions
 
-## 🌐 Community
+## 💬 Technical Discussion Group
 
-Join our community:
-- [Telegram Group](https://t.me/CherryStudioAI)
-- [Discord](https://discord.gg/wez8HtpxqQ)
-- [Twitter](https://x.com/kangfenmao)
+<div align="center">
+  <img src="docs/static/img/group.png" alt="Technical Discussion Group QR Code" width="200"/>
+  <p>Scan the QR code to join our technical discussion group</p>
+</div>
 
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Puhua-AI-Research/WorkStudio&type=Timeline)](https://star-history.com/#Puhua-AI-Research/WorkStudio&Timeline)
+
+<div align="center">
+  <p>Made with ❤️ by <a href="https://github.com/Puhua-AI-Research">Puhua AI Research</a></p>
+  <p>© 2025 WorkStudio. All rights reserved.</p>
+</div>
 
 
 
