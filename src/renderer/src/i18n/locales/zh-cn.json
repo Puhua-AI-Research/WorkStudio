@@ -57,7 +57,7 @@
     },
     "auth": {
       "error": "自动获取密钥失败，请手动获取",
-      "get_key": "获取",
+      "get_key": "获取密钥",
       "get_key_success": "自动获取密钥成功",
       "login": "登录",
       "oauth_button": "使用{{provider}}登录"
@@ -461,6 +461,7 @@
       "custom_parameters": "自定义参数",
       "dimensions": "{{dimensions}} 维",
       "embedding": "嵌入",
+      "image": "图像",
       "embedding_model": "嵌入模型",
       "embedding_model_tooltip": "在设置->模型服务中点击管理按钮添加",
       "free": "免费",

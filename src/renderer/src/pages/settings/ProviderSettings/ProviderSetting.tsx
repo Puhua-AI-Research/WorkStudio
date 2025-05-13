@@ -265,12 +265,13 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
         /> */}
       </SettingTitle>
       <Divider style={{ width: '100%', margin: '10px 0' }} />
-      {!toPH8LLM && (
+      {true && (
         <>
           <SettingSubtitle>{t('settings.provider.api_host')}</SettingSubtitle>
           <Space.Compact style={{ width: '100%', marginTop: 5 }}>
             <Input
               value={apiHost}
+              disabled={toPH8LLM}
               placeholder={t('settings.provider.api_host')}
               onChange={(e) => setApiHost(e.target.value)}
               onBlur={onUpdateApiHost}
@@ -303,10 +304,11 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
        </>
       )}
       {/* 密钥 */}
-      <SettingSubtitle style={{ marginTop: 5 }}>{t('settings.provider.api_key')} 
+      <SettingSubtitle style={{ marginTop: 5, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>{t('settings.provider.api_key')} 
         {officialWebsite! && (
-              <Link target="_blank" href={providerConfig.websites.official} style={{ marginLeft: 5 }}>
-                <ExportOutlined style={{ color: 'var(--color-text)', fontSize: '12px' }} />
+              <Link target="_blank" href={providerConfig.websites.official} style={{ fontWeight: '800' }}>
+                <ExportOutlined style={{  fontSize: '14px', marginRight: 4 }} />
+                {t('auth.get_key')}
               </Link>
             )}
       </SettingSubtitle>

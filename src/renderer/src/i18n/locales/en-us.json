@@ -57,7 +57,7 @@
     },
     "auth": {
       "error": "API key automatically obtained failed, please get it manually",
-      "get_key": "Get",
+      "get_key": "Get Key",
       "get_key_success": "API key automatically obtained successfully",
       "login": "Login",
       "oauth_button": "Auth with {{provider}}"
@@ -461,6 +461,7 @@
       "custom_parameters": "Custom Parameters",
       "dimensions": "Dimensions {{dimensions}}",
       "embedding": "Embedding",
+      "image": "Image",
       "embedding_model": "Embedding Model",
       "embedding_model_tooltip": "Add in Settings->Model Provider->Manage",
       "free": "Free",

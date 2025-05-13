@@ -68,6 +68,8 @@ const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
         return isFreeModel(model)
       case 'embedding':
         return isEmbeddingModel(model)
+      case "image":
+        return isTextToImageModel(model)
       default:
         return true
     }
@@ -160,11 +162,16 @@ const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
       onOk={onOk}
       onCancel={onCancel}
       afterClose={onClose}
+      maskClosable={true}
       footer={null}
-      width="600px"
+      closeIcon={null}
+      // width="600px"
       styles={{
-        content: { padding: 0 },
+        content: { 
+          padding: 0,
+        },
         header: { padding: 22, paddingBottom: 15 }
+        
       }}
       centered>
       <SearchContainer>
@@ -174,8 +181,9 @@ const PopupContainer: React.FC<Props> = ({ provider: _provider, resolve }) => {
             <Radio.Button value="reasoning">{t('models.reasoning')}</Radio.Button>
             <Radio.Button value="vision">{t('models.vision')}</Radio.Button>
             <Radio.Button value="websearch">{t('models.websearch')}</Radio.Button>
-            <Radio.Button value="free">{t('models.free')}</Radio.Button>
+            {/* <Radio.Button value="free">{t('models.free')}</Radio.Button> */}
             <Radio.Button value="embedding">{t('models.embedding')}</Radio.Button>
+            <Radio.Button value="image">{t('models.image')}</Radio.Button>
           </Radio.Group>
         </Center>
         <Search
