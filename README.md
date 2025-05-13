@@ -75,22 +75,7 @@
 
 ## 📋 Installation
 
-```bash
-# Install using Yarn
-yarn
-
-# Development
-yarn dev
-
-# Build for Windows
-yarn build:win
-
-# Build for macOS
-yarn build:mac
-
-# Build for Linux
-yarn build:linux
-```
+- Simply install using the provided offline desktop application packages
 
 ## 💻 Development
 
