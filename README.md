@@ -2,7 +2,7 @@
   <img src="https://github.com/Puhua-AI-Research/WorkStudio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="WorkStudio Logo" />
   <h3>A powerful AI assistant for producers</h3>
     <div align="center">
-  English | <a href="docs/README.zh.md">中文</a> | <a href="../README.ja.md">日本語</a>
+  English | <a href="./README.zh.md">中文</a>
 </div>
   <div>
     <a href="https://github.com/Puhua-AI-Research/WorkStudio/stargazers">
@@ -117,8 +117,8 @@ yarn build:linux
 WorkStudio offers flexible options for large language model integration:
    
 - **Local Deployment**: Run models locally with minimal setup using:
-   - Ollama for containerized deployment
-   - LM Studio for user-friendly GUI-based management
+   - vllm for containerized deployment
+   - LM Deployment for user-friendly GUI-based management
    
 - **ph8-llm Integration**: Native support for ph8-llm, enabling:
    - High-performance inference
@@ -132,22 +132,11 @@ WorkStudio offers flexible options for large language model integration:
 
 ## 🚀 Private Deployment
 
-To deploy WorkStudio in your own environment:
+- For more information on private deployment, please join our technical discussion group below to communicate and get support.
 
-1. Build the application for your target platform
-   ```bash
-   # Windows
-   yarn build:win
+## 🙏 Acknowledgments
 
-   # macOS
-   yarn build:mac
-
-   # Linux
-   yarn build:linux
-   ```
-
-2. Distribute the generated installation packages from the `dist` directory
-
+We would like to express our sincere gratitude to Cherry Studio for their significant contributions. WorkStudio is based on the secondary development of Cherry Studio's product.
 
 ## 📄 License
 
