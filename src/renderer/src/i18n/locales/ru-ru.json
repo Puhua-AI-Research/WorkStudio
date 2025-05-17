@@ -83,6 +83,7 @@
       "artifacts.preview.openExternal.error.content": "Внешний браузер открылся с ошибкой",
       "assistant.search.placeholder": "Поиск",
       "deeply_thought": "Мыслим ({{secounds}} секунд)",
+      "deeply_thought_no_time": "Мыслим",
       "default.description": "Привет, я Ассистент по умолчанию. Вы можете начать общаться со мной прямо сейчас",
       "default.name": "Ассистент по умолчанию",
       "default.topic.name": "Топик по умолчанию",

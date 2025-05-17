@@ -83,6 +83,7 @@
       "artifacts.preview.openExternal.error.content": "外部瀏覽器開啟出錯",
       "assistant.search.placeholder": "搜尋",
       "deeply_thought": "已深度思考（用時 {{secounds}} 秒）",
+      "deeply_thought_no_time": "已深度思考",
       "default.description": "你好，我是預設助手。你可以立即開始與我聊天。",
       "default.name": "預設助手",
       "default.topic.name": "預設話題",

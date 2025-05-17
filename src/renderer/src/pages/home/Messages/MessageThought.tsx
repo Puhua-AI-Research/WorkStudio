@@ -58,7 +58,8 @@ const MessageThought: FC<Props> = ({ message }) => {
           label: (
             <MessageTitleLabel>
               <TinkingText>
-                {isThinking ? t('chat.thinking') : t('chat.deeply_thought', { secounds: thinkingTimeSeconds })}
+                {/* {isThinking ? t('chat.thinking') : t('chat.deeply_thought', { secounds: thinkingTimeSeconds })} */}
+                {isThinking ? t('chat.thinking') : t('chat.deeply_thought_no_time')}
               </TinkingText>
               {isThinking && !isPaused && <BarLoader color="#9254de" />}
               {(!isThinking || isPaused) && (

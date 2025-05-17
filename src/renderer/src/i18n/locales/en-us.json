@@ -83,6 +83,7 @@
       "artifacts.preview.openExternal.error.content": "Error opening the external browser.",
       "assistant.search.placeholder": "Search",
       "deeply_thought": "Deeply thought ({{secounds}} seconds)",
+      "deeply_thought_no_time": "Deeply thought",
       "default.description": "Hello, I'm Default Assistant. You can start chatting with me right away",
       "default.name": "Default Assistant",
       "default.topic.name": "Default Topic",

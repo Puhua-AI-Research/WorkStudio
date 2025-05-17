@@ -83,6 +83,7 @@
       "artifacts.preview.openExternal.error.content": "外部ブラウザの起動に失敗しました。",
       "assistant.search.placeholder": "検索",
       "deeply_thought": "深く考えています（{{secounds}} 秒）",
+      "deeply_thought_no_time": "深く考えています",
       "default.description": "こんにちは、私はデフォルトのアシスタントです。すぐにチャットを始められます。",
       "default.name": "デフォルトアシスタント",
       "default.topic.name": "デフォルトトピック",
