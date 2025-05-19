@@ -31,7 +31,7 @@ const initialState: LlmState = {
       name: 'PH8-LLM',
       type: 'openai',
       apiKey: '',
-      apiHost: 'https://api.proxy.puhuacloud.com',
+      apiHost: 'https://auto-openai.cpolar.cn',
       models: SYSTEM_MODELS.lmstudio,
       isSystem: true,
       enabled: true

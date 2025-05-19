@@ -423,10 +423,10 @@ export const PROVIDER_CONFIG = {
   },
   lmstudio: {
     api: {
-      url: 'https://api.proxy.puhuacloud.com'
+      url: 'https://auto-openai.cpolar.cn'
     },
     websites: {
-      official: 'https://api.proxy.puhuacloud.com',
+      official: 'https://auto-openai.cpolar.cn',
       docs: 'https://lmstudio.ai/docs',
       models: 'https://lmstudio.ai/models'
     }
