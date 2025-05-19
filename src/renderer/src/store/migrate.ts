@@ -985,7 +985,7 @@ const migrateConfig = {
         name: 'PH8-LLM',
         type: 'openai',
         apiKey: '',
-        apiHost: 'https://auto-openai.cpolar.cn',
+        apiHost: 'https://api.proxy.puhuacloud.com',
         models: SYSTEM_MODELS.lmstudio,
         isSystem: true,
         enabled: true
@@ -1055,7 +1055,7 @@ const migrateConfig = {
         name: 'PH8-LLM',
         type: 'openai',
         apiKey: '',
-        apiHost: 'https://auto-openai.cpolar.cn',
+        apiHost: 'https://api.proxy.puhuacloud.com',
         models: SYSTEM_MODELS.lmstudio,
         isSystem: true,
         enabled: true
@@ -1134,7 +1134,7 @@ const migrateConfig = {
         name: 'PH8-LLM',
         type: 'openai',
         apiKey: '',
-        apiHost: 'https://auto-openai.cpolar.cn',
+        apiHost: 'https://api.proxy.puhuacloud.com',
         models: SYSTEM_MODELS.lmstudio,
         isSystem: true,
         enabled: true

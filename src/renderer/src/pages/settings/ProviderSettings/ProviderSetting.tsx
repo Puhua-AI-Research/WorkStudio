@@ -265,7 +265,7 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
         /> */}
       </SettingTitle>
       <Divider style={{ width: '100%', margin: '10px 0' }} />
-      {true && (
+      {!toPH8LLM && (
         <>
           <SettingSubtitle>{t('settings.provider.api_host')}</SettingSubtitle>
           <Space.Compact style={{ width: '100%', marginTop: 5 }}>
