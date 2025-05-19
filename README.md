@@ -97,6 +97,43 @@
    yarn dev
    ```
 
+### Build Options
+
+The project supports building for multiple platforms:
+
+#### Windows
+```bash
+# Build for Windows
+yarn build:win
+
+# Build for Windows x64
+yarn build:win:x64
+```
+
+#### macOS
+```bash
+# Build for macOS (Universal)
+yarn build:mac
+
+# Build for macOS ARM64
+yarn build:mac:arm64
+
+# Build for macOS x64
+yarn build:mac:x64
+```
+
+#### Linux
+```bash
+# Build for Linux
+yarn build:linux
+
+# Build for Linux ARM64
+yarn build:linux:arm64
+
+# Build for Linux x64
+yarn build:linux:x64
+```
+
 ### Large Model Support
 
 WorkStudio offers flexible options for large language model integration:

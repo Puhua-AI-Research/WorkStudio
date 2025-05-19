@@ -1,6 +1,6 @@
 {
   "name": "WorkStudio",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "private": true,
   "description": "A powerful AI assistant for producer.",
   "main": "./out/main/index.js",

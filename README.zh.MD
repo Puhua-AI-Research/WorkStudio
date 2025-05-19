@@ -97,6 +97,43 @@
    yarn dev
    ```
 
+### 构建选项
+
+项目支持多平台构建：
+
+#### Windows
+```bash
+# 构建Windows版本
+yarn build:win
+
+# 构建Windows x64版本
+yarn build:win:x64
+```
+
+#### macOS
+```bash
+# 构建macOS通用版本
+yarn build:mac
+
+# 构建macOS ARM64版本
+yarn build:mac:arm64
+
+# 构建macOS x64版本
+yarn build:mac:x64
+```
+
+#### Linux
+```bash
+# 构建Linux版本
+yarn build:linux
+
+# 构建Linux ARM64版本
+yarn build:linux:arm64
+
+# 构建Linux x64版本
+yarn build:linux:x64
+```
+
 ### 大模型支持
 
 WorkStudio为大语言模型集成提供灵活选项：
