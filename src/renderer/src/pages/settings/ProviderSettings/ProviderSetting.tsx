@@ -53,8 +53,8 @@ interface Props {
   provider: Provider
 }
 
-const toPH8LLM:boolean = true
-// const toPH8LLM:boolean = false
+// const toPH8LLM:boolean = true
+const toPH8LLM:boolean = false
 
 const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
   const { provider } = useProvider(_provider.id)
@@ -190,6 +190,16 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
     updateProvider({ ...provider, apiHost: configedApiHost })
   }
 
+  const onResetApiKey = (value: string) => {
+    setApiKey(value)
+    if (toPH8LLM) {
+      setApiHost(configedApiHost)
+    } else {
+      setApiHost(apiHost)
+    }
+    updateProvider({ ...provider, apiHost: configedApiHost, apiKey: value })
+  }
+
   const hostPreview = () => {
     if (apiHost.endsWith('#')) {
       return apiHost.replace('#', '')
@@ -271,7 +281,7 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
           <Space.Compact style={{ width: '100%', marginTop: 5 }}>
             <Input
               value={apiHost}
-              disabled={toPH8LLM}
+              // disabled={toPH8LLM}
               placeholder={t('settings.provider.api_host')}
               onChange={(e) => setApiHost(e.target.value)}
               onBlur={onUpdateApiHost}
@@ -316,7 +326,7 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
         <Input.Password
           value={apiKey}
           placeholder={t('settings.provider.api_key')}
-          onChange={(e) => setApiKey(formatApiKeys(e.target.value))}
+          onChange={(e) => onResetApiKey(formatApiKeys(e.target.value))}
           onBlur={onUpdateApiKey}
           spellCheck={false}
           type="password"

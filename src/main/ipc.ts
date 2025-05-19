@@ -103,10 +103,10 @@ export function registerIpc(mainWindow: BrowserWindow, app: Electron.App) {
 
   // check for update
   ipcMain.handle('app:check-for-update', async () => {
-    const update = await appUpdater.autoUpdater.checkForUpdates()
+    // const update = await appUpdater.autoUpdater.checkForUpdates()
     return {
       currentVersion: appUpdater.autoUpdater.currentVersion,
-      updateInfo: update?.updateInfo
+      updateInfo: undefined
     }
   })
 
