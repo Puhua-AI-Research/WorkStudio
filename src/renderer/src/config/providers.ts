@@ -423,10 +423,10 @@ export const PROVIDER_CONFIG = {
   },
   lmstudio: {
     api: {
-      url: 'https://auto-openai.cpolar.cn'
+      url: 'https://ph8.co'
     },
     websites: {
-      official: 'https://auto-openai.cpolar.cn',
+      official: 'https://ph8.co',
       docs: 'https://lmstudio.ai/docs',
       models: 'https://lmstudio.ai/models'
     }

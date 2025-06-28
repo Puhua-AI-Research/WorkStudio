@@ -31,7 +31,7 @@ const initialState: LlmState = {
       name: 'PH8-LLM',
       type: 'openai',
       apiKey: '',
-      apiHost: 'https://auto-openai.cpolar.cn',
+      apiHost: 'https://ph8.co',
       models: SYSTEM_MODELS.lmstudio,
       isSystem: true,
       enabled: true

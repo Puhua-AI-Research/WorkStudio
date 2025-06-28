@@ -13,7 +13,7 @@ const SettingsPage: FC = () => {
     name: 'PH8-LLM',
     type: 'openai' as ProviderType,
     apiKey: '',
-    apiHost: 'https://auto-openai.cpolar.cn',
+    apiHost: 'https://ph8.co',
     models: [
       // {
       //   id: 'Qwen2.5-Coder-32B-Instruct-GPTQ-Int4:32k',
