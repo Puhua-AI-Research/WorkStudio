@@ -192,11 +192,11 @@ const ProviderSetting: FC<Props> = ({ provider: _provider }) => {
 
   const onResetApiKey = (value: string) => {
     setApiKey(value)
-    if (toPH8LLM) {
-      setApiHost(configedApiHost)
-    } else {
-      setApiHost(apiHost)
-    }
+    // if (toPH8LLM) {
+    //   setApiHost(configedApiHost)
+    // } else {
+    //   setApiHost(apiHost)
+    // }
     updateProvider({ ...provider, apiHost: configedApiHost, apiKey: value })
   }
 
